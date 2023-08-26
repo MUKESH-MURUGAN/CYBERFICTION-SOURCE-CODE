@@ -374,7 +374,7 @@ gsap.to(imageSeq, {
     trigger: `#page>canvas`,
     start: `top top`,
     end: `600% top`,
-    scroller: `#main`,
+    scroller:  main,
   },
   onUpdate: render,
 });
@@ -409,7 +409,7 @@ ScrollTrigger.create({
   trigger: "#page>canvas",
   pin: true,
   // markers:true,
-  scroller: `#main`,
+  scroller:  main,
   start: `top top`,
   end: `600% top`,
 });
@@ -422,7 +422,7 @@ gsap.to("#page1",{
     start:`top top`,
     end:`bottom top`,
     pin:true,
-    scroller:`#main`
+    scroller: main,
   }
 })
 gsap.to("#page2",{
@@ -431,7 +431,7 @@ gsap.to("#page2",{
     start:`top top`,
     end:`bottom top`,
     pin:true,
-    scroller:`#main`
+    scroller: main,
   }
 })
 gsap.to("#page3",{
